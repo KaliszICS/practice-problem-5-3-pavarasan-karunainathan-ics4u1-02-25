@@ -1,8 +1,8 @@
 
 class Notes {
 	public static void main(String[] args) {
-		ChequingAccount c = new ChequingAccount(9000, 1234);
-		SavingsAccount s = new SavingsAccount(9000, 0.05);
+		ChequingAccount c = new ChequingAccount(1, 2, 9000, 1234);
+		SavingsAccount s = new SavingsAccount(1, 2, 9000, 0.05);
 
 		System.out.println(c.withdraw(1000));
 		System.out.println(c.getBalance());

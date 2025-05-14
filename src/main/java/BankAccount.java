@@ -3,6 +3,12 @@ abstract class BankAccount {
 	protected double accountBalance; //stop other coders from using this variable, but allow you to access it.
 	protected int accountNumber;
 
+	//This automatically exists in any class
+	public BankAccount(int accountNumber, double accountBalance) {
+		this.accountBalance = accountBalance;
+		this.accountNumber = accountNumber;
+	}
+
 	public boolean withdraw(double money) {
 		if (money <= this.accountBalance) {
 			this.accountBalance -= money;

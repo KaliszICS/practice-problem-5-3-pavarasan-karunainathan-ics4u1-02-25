@@ -2,7 +2,8 @@ class SavingsAccount extends BankAccount {
 
 	private double interestRate;
 	
-	public SavingsAccount(double money, double interestRate) {
+	public SavingsAccount(int accountNumber, double accountBalance, double money, double interestRate) {
+		super(accountNumber, accountBalance);
 		this.accountBalance = money;
 		this.interestRate = interestRate;
 	}
@@ -18,6 +19,7 @@ class SavingsAccount extends BankAccount {
 	public double getInterest() {
 		return this.interestRate;
 	}
+
 	@Override
 	public boolean pin(int pin) {
 		return false;
